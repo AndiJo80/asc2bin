@@ -9,7 +9,7 @@ Requires Python3 to run:\
 https://www.python.org/
 
 # Usage
-### run directly with Python
+### Run with Python
 ```shell
 echo 41424344 | python asc2bin.py 
 ABCD
@@ -33,7 +33,7 @@ python asc2bin.py
 ```
 -> reads from stdin and writes to stdout
 
-### run via shell script
+### Run via shell script
 Windows:
 ```shell
 asc2bin.bat input.txt output.bin
