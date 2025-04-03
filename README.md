@@ -3,43 +3,52 @@ asc2bin
 
 # Summary
 
-Convert ASCII codes into a binary file via the command line.
+Convert ASCII codes into a characters and back via the command line.
 
 Requires Python3 to run:\
 https://www.python.org/
 
+hex2asc.py - convert ascii hex codes to characters\
+asc2hex.py - convert characters to ascii hex codes
+
 # Usage
+Both programs, *hex2asc* and *asc2hex*, are both used in very similar ways. They supports different cases:
+- without input and output to console (stdout)
+- with input from console (stdin) and output to console (stdout)
+- with input from file and output to console (stdout)
+- with input from file and output to file
+
 ### Run with Python
 ```shell
-echo 41424344 | python asc2bin.py 
+echo 41424344 | python hex2asc.py 
 ABCD
 ```
 
 or
 ```shell
-python asc2bin.py input.txt output.bin
+python hex2asc.py input.txt output.bin
 ```
 -> reaad file input.txt and writes result to file output.bin
 
 or
 ```shell
-python asc2bin.py input.txt
+python hex2asc.py input.txt
 ```
 -> reads file input.txt and writes result to stdout
 
 or
 ```shell
-python asc2bin.py
+python hex2asc.py
 ```
 -> reads from stdin and writes to stdout
 
 ### Run via shell script
 Windows:
 ```shell
-asc2bin.bat input.txt output.bin
+hex2asc.bat input.txt output.bin
 ```
 
 Linux:
 ```shell
-./asc2bin.sh input.txt output.bin
+./hex2asc.sh input.txt output.bin
 ```
