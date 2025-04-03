@@ -3,7 +3,7 @@ asc2bin
 
 # Summary
 
-Convert ASCII codes into a characters and back via the command line.
+Convert hex codes into ascii characters (and back) via the command line.
 
 Requires Python3 to run:\
 https://www.python.org/
